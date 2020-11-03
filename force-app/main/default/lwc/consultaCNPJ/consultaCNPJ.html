@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Consulta - Cadastro Nacional de Pessoa Jurídica" icon-name="custom:custom14">
+      <div class="slds-m-around_medium">
+        <p>Pesquisa de CNPJ - ReceitaWS - {cnpj}</p>
+        </br>
+        <lightning-input id="inputCNPJ" label="Digite o CNPJ" value={cnpj} onchange={handleKeyChange}></lightning-input>
+        </br>
+      </div>
+
+    <template if:true={jsonCNPJ.data}>
+        <b>{jsonCNPJ.data}</b>
+    </template>              
+    </lightning-card>  
+
+  </template>
